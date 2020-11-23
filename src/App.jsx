@@ -11,6 +11,11 @@ import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from'./components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 import './App.css'
 
@@ -21,6 +26,26 @@ export default (props) => {
       <h1>Fundamentos React (Arrow)</h1>
 
       <div className="cards">
+
+        <Card titulo="#13 - Desafio Mega" color="#424242">
+          <Mega qtd={1}/>
+        </Card>
+
+        <Card titulo="#12 - Contador" color="#424242">
+          <Contador numeroInicial={10}  />
+        </Card>
+
+        <Card titulo="#11 - Componente Controlado" color="#E45F56">
+          <Input />
+        </Card>
+
+        <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+          <IndiretaPai />
+        </Card>
+
+        <Card titulo="#9 - Comunicação Direta" color="#59323C">
+          <DiretaPai />
+        </Card>
 
         <Card titulo="#8 - Renderização Condicional" color="#982395">
           <ParOuImpar numero={21}></ParOuImpar>

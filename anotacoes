@@ -89,4 +89,50 @@
     
         Permite decidir se um elemento vai ser renderizado ou não na tela
         * Operação Ternária é muito utilizada
-        * Criando componente condicional
+        * Criando componente condicional (<If>)
+        
+        child.type | child.name
+        
+    13. Comunicação Direta
+    
+        * Se dá através das props
+        * Dentro do Pai há uma referência ao filho
+
+    14. Comunicação Indireta
+    
+        * Informações passadas do filho para o pai sem a necessidade
+        de referenciar o pai no filho (o que não seria certo)
+        
+        * Se dá por meio de funções passadas via Props (pai -> filho)
+        
+    15. Componente com Estado
+    
+        useState [Hook] -> permite criar estados dentro de um componente
+        const [nome, setNome] = useState('?')
+    
+    16. Componente Controlado (Controlled Components)
+    
+        Estado muda -> altera a interface gráfica
+        O componente só reflete a mudança na interace se o estado mudar
+        
+        * onChange
+        * readOnly
+        * value={undefined} -> Uncontrolled Component
+        
+    17. Desafio Contador
+    
+        * Componente com classes
+            
+            state = {}
+            render()
+            this.props.
+            constructor()
+            super(props)
+        
+        * Cuidado com o this (optar pela função Arrow)
+        
+        - Quebrando o contador em componentes
+        
+    18. Desafio da Megasena
+    
+        *Gerar Array com Números (param = qtd)
