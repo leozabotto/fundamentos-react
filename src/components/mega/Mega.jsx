@@ -20,7 +20,15 @@ export default props => {
     <div>
       <h1>Mega-Sena</h1>
       <label htmlFor="qtd">Quantidade de números</label><br></br>
-      <input type="number" id="qtd" value={qtd} onChange={handleQtdChange} min="1" max="60" />
+      <input 
+        type="number" 
+        id="qtd" 
+        value={qtd} 
+        onChange={(e) => {
+          handleQtdChange(e)
+        } } 
+        min="1" 
+        max="60" />
       <div>
         <button onClick={handleSort}>Sortear</button>
       </div>

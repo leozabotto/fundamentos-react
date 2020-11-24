@@ -1,5 +1,4 @@
 import React from 'react'
-import { unstable_renderSubtreeIntoContainer } from 'react-dom'
 import If, { Else } from './If'
 
 export default props => {

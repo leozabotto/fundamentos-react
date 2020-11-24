@@ -27,7 +27,7 @@ export default (props) => {
 
       <div className="cards">
 
-        <Card titulo="#13 - Desafio Mega" color="#424242">
+        <Card titulo="#13 - Desafio Mega" color="#B9006E">
           <Mega qtd={1}/>
         </Card>
 
